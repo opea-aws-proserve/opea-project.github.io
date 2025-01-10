@@ -1981,13 +1981,13 @@
 <ul class="simple">
 <li><p>Xeon CPU</p></li>
 </ul>
-<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>docker<span class="w"> </span>build<span class="w"> </span>-t<span class="w"> </span>opea/wav2lip:latest<span class="w"> </span>-f<span class="w"> </span>comps/animation/src/integration/dependency/Dockerfile<span class="w"> </span>.
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>docker<span class="w"> </span>build<span class="w"> </span>-t<span class="w"> </span>opea/wav2lip:latest<span class="w"> </span>-f<span class="w"> </span>comps/3rd_parties/wav2lip/src/Dockerfile<span class="w"> </span>.
 </pre></div>
 </div>
 <ul class="simple">
 <li><p>Gaudi2 HPU</p></li>
 </ul>
-<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>docker<span class="w"> </span>build<span class="w"> </span>-t<span class="w"> </span>opea/wav2lip-gaudi:latest<span class="w"> </span>-f<span class="w"> </span>comps/animation/src/integration/dependency/Dockerfile.intel_hpu<span class="w"> </span>.
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>docker<span class="w"> </span>build<span class="w"> </span>-t<span class="w"> </span>opea/wav2lip-gaudi:latest<span class="w"> </span>-f<span class="w"> </span>comps/3rd_parties/wav2lip/src/Dockerfile.intel_hpu<span class="w"> </span>.
 </pre></div>
 </div>
 </section>
@@ -2070,7 +2070,7 @@
 <section id="validate-wav2lip-service">
 <h2>3.1 Validate Wav2Lip service<a class="headerlink" href="#validate-wav2lip-service" title="Link to this heading">¶</a></h2>
 <div class="highlight-bash notranslate"><div class="highlight"><pre><span></span><span class="nb">cd</span><span class="w"> </span>GenAIComps
-python3<span class="w"> </span>comps/animation/src/integration/dependency/check_wav2lip_server.py
+python3<span class="w"> </span>comps/3rd_parties/wav2lip/src/check_wav2lip_server.py
 </pre></div>
 </div>
 </section>
@@ -2083,7 +2083,7 @@ curl<span class="w"> </span>http://<span class="si">${</span><span class="nv">ip
 </div>
 <p>or</p>
 <div class="highlight-bash notranslate"><div class="highlight"><pre><span></span><span class="nb">cd</span><span class="w"> </span>GenAIComps
-python3<span class="w"> </span>comps/animation/src/integration/dependency/check_animation_server.py
+python3<span class="w"> </span>comps/3rd_parties/wav2lip/src/check_animation_server.py
 </pre></div>
 </div>
 <p>The expected output will be a message similar to the following:</p>
